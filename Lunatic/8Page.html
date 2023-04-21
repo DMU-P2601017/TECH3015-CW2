@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Lunatic.css">
+    <title>Lunatic</title>
+  </head>
+  <body>
+    <div class="MainContent">
+      <div class="Girl1"></div>
+      <div class="BackpackImg" onclick="openBackpack()"><img src="images/Backpack.png" alt="Backpack Content"></div>
+      <div class="BackpackPopup" id="BackpackPopup">
+       
+          <div class="Icons"><img src="images/Apple.png"><p>Fresh Apple</p></div> 
+            <div class="Icons"><img src="images/Bottle.png"><p>Water Bottle</p></div>
+              <div class="Icons"><img src="images/Letter.png"><p>Found Letter</p></div>
+              <div class="Icons"><img src="images/Tablet.png"><p>Found Tablet</p></div>
+      <div class="BckgBackpack"><img src="images/Backpack.png"></div>
+        <div class="CloseBackpack" onclick="closeBackpack()">CLOSE THE BACKPACK</div>
+  
+    </div>
+      <div class="HomeButtonImg"><img src="images/HomeButton.png" alt="Home Button" onclick="openMenu()"></div></a>
+      <div class="PopUpMenu" id="PopUpMenu">
+        <p>Are you sure you want to exit the game?
+       </p>
+       <a href="index.html"><div class="HomeYes">YES</div></a>
+       <div class="HomeCancel" onclick="closeMenu()">CANCEL</div>
+      </div>
+      <div class="SurvivalScore">Survival Score</div>
+      <a href="6Page.html"><div class="GoBackButton">GO BACK</div></a>
+      <div id="text-to-speak">
+      <div class="Text1"><p> 
+        “Sorry, sorry! Just don’t hurt me.. I apologise” she screamed in a fear.
+        “You should!” said Ryan.
+        </p></div>
+      <div class="TextItalic"><p>  
+        Pff.. That was close. I am so happy I took that knife with me. </p></div></div>
+        <div class="Speaker"><img src="images/Speaker.png" alt="Speaker"onclick="speakText()"></div>
+      <a href="10Page.html"><div class="RegularButton6">WALK AWAY</div></a>
+
+  </div>
+  <script src="myScript.js"></script>
+
+  <audio loop autoplay>
+    <source src="music/8Page.mp3" type="audio/mp3">
+    Sorry if you cannot hear the music.
+    Your browser does not support the audio element.
+  </audio>
+
+  </body>
+</html>

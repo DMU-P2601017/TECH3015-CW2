@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--Each html page contains a head section, which includes information such as
+    page title, link to css stylesheet and other settings.-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Lunatic.css">
+    <!--CSS page contains main styling of this page.-->
+    <title>Lunatic</title>
+  </head>
+  <body>
+     <!--Body is the main section of the page, that usually contains menu/navigation, some text and images, 
+       and interactive buttons/pop-ups.-->
+    <div class="MainContent">
+        <div class="Hallway"></div>
+        <div class="MainHeading">LUNATIC</div>
+        <a href="1Page.html"><div class="StartButton">START GAME</div></a>
+    </div>
+    <!-- Div elements help to organise sections into groups. Each class has assigned different
+    styling such as font, colour and padding. In this case, "Main Content" is a created container
+for a "Hallway" background image that fills the container and is fully responsive. "a href" property
+allows to take user by clicking the button to the next page.-->
+
+<audio loop autoplay>
+  <source src="music/MainPage.mp3" type="audio/mp3">
+  Sorry if you cannot hear the music.
+  Your browser does not support the audio element.
+</audio>
+
+<!--This audio element allows to paste music into the HTML. Music repeats itself after it finishes
+playing (loop) and starts to play automatically when user opens the page (autoplay).
+It also contains the information message, if the audio is not supported by the browser.-->
+  </body>
+</html>

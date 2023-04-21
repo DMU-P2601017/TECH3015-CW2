@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Lunatic.css">
+    <title>Lunatic</title>
+  </head>
+  <body>
+    <div class="MainContent">
+      <div class="Bathroom"></div>
+      <div class="BackpackImg" onclick="openBackpack()"><img src="images/Backpack.png" alt="Backpack Content"></div>
+      <div class="BackpackPopup" id="BackpackPopup">
+       
+          <div class="Icons"><img src="images/Apple.png"><p>Fresh Apple</p></div> 
+            <div class="Icons"><img src="images/Bottle.png"><p>Water Bottle</p></div>
+              <div class="Icons"><img src="images/Letter.png"><p>Found Letter</p></div>
+              <div class="Icons"><img src="images/KitchenKnife.png"><p>Kitchen Knife</p></div>
+      <div class="BckgBackpack"><img src="images/Backpack.png"></div>
+        <div class="CloseBackpack" onclick="closeBackpack()">CLOSE THE BACKPACK</div>
+  
+    </div>
+      <div class="HomeButtonImg"><img src="images/HomeButton.png" alt="Home Button" onclick="openMenu()"></div></a>
+      <div class="PopUpMenu" id="PopUpMenu">
+        <p>Are you sure you want to exit the game?
+       </p>
+       <a href="index.html"><div class="HomeYes">YES</div></a>
+       <div class="HomeCancel" onclick="closeMenu()">CANCEL</div>
+      </div>
+      <div class="SurvivalScore">Survival Score</div>
+      <a href="3Page.html"><div class="GoBackButton">GO BACK</div></a>
+      <div id="text-to-speak">
+      <div class="TextItalic"><p>I wouldn’t like to wash my 
+        hands here. Stay in here in general…       
+        </p></div></div>
+        <div class="Speaker"><img src="images/Speaker.png" alt="Speaker"onclick="speakText()"></div>
+      <a href="5Page.html"><div class="RegularButton4">CONTINUE</div></a>
+      <div class="RegularButton5" onclick="openInvestigate()">INVESTIGATE</div>
+      <div class="InvestigatePopup" id="InvestigatePopup">
+        <img src="images/Wrench.png">  
+        <div class="Italic"><p>Hell no, another tools covered in blood. 
+          That person must have definitely gone the same direction 
+          where am I going right now… </p></div>
+        <div class="InvestigateCancel" onclick="closeInvestigate()">CANCEL</div>
+
+      </div>
+
+  </div>
+  <script src="myScript.js"></script>
+
+  <audio loop autoplay>
+    <source src="music/4Page.mp3" type="audio/mp3">
+    Sorry if you cannot hear the music.
+    Your browser does not support the audio element.
+  </audio>
+
+  </body>
+</html>

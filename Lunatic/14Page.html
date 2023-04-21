@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Lunatic.css">
+    <title>Lunatic</title>
+  </head>
+  <body>
+    <div class="MainContent">
+      <div class="BurningHouse"></div>
+      <div class="HomeButtonImg"><img src="images/HomeButton.png" alt="Home Button" onclick="openMenu()"></div>
+      <div class="PopUpMenu" id="PopUpMenu">
+        <p>Are you sure you want to exit the game?
+       </p>
+       <a href="index.html"><div class="HomeYes">YES</div></a>
+       <div class="HomeCancel" onclick="closeMenu()">CANCEL</div>
+      </div>
+      <div class="SurvivalScore">Survival Score</div>
+      <a href="13Page.html"><div class="GoBackButton">GO BACK</div></a>
+    <div id="text-to-speak">  
+    <div class="Text3"><p> 
+        Ryan spilled the petrol on the front porch, leading its way outside to the pavement. 
+He didn’t hesitate for a second. He watched the small flame consume the match and then he threw it in the petrol liquid. 
+ Hospital was on fire in matter of seconds. 
+He was standing there, watching the flames burning down the house construction as he was enjoying sound of crackling wood. 
+    </p></div>
+    <div class="Text"><p> 
+        “This is your end, David. Karma always gets you, they say. It is going to be our secret, I will never tell anyone about what you did, don’t worry pal.” 
+whispered Ryan with a smile on his face.
+    </p></div></div> 
+    <div class="Speaker"><img src="images/Speaker.png" alt="Speaker"onclick="speakText()"></div>
+    <a href="15Page.html"><div class="RegularButton6">WALK AWAY</div></a>
+  </div>
+  <script src="myScript.js"></script>
+
+  <audio loop autoplay>
+    <source src="music/11Page.mp3" type="audio/mp3">
+    Sorry if you cannot hear the music.
+    Your browser does not support the audio element.
+  </audio>
+
+  </body>
+</html>
