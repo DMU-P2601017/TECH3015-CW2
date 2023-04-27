@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Lunatic.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lunatic</title>
+  </head>
+  <body>
+    <header>
+        <div class="HomeButtonImg"><img src="images/HomeButton.png" alt="Home Button" onclick="openMenu()"></div>   
+            <div class="PopUpMenu" id="PopUpMenu">
+                <p>Are you sure you want to exit the game?
+               </p>
+               <a href="index.html"><div class="HomeYes">YES</div></a>
+               <div class="HomeCancel" onclick="closeMenu()">CANCEL</div>
+              </div>
+            <h2>Your Survival Score: 12150</h1>
+        <div class="firepit"> 
+    <img src="images/Expert.png" alt="expert rank">
+        </div>  
+        </div> 
+    <div id="text-to-speak">      
+    <h3>Rank</h3>
+    <h2>Expert</h2>
+    <h1>Overall Statistics</h1>
+    <div class="SplitBackground1"></div>
+    <div class="ImageRow">
+        <div class="ImageColumn1">
+            <h2>31% people escaped</h2>
+            
+        </div>
+        <div class="ImageColumn2">
+            <h2>69% people was captured</h2>
+        </div>
+    </div></div>
+    <div class="Speaker"><img src="images/Speaker.png" alt="Speaker"onclick="speakText()"></div>
+    <!--This page's layout is different; content is centered and contains statistics. "H" = headings'
+    elements are styled in CSS. -->
+    <a href="13Page.html"><div class="GoBackButton2">GO BACK</div></a>
+</header>
+<script src="myScript.js"></script>
+
+<audio autoplay>
+  <source src="music/12Page.mp3" type="audio/mp3">
+  Sorry if you cannot hear the music.
+  Your browser does not support the audio element.
+</audio>
+
+  </body>
+</html>

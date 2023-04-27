@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Lunatic.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lunatic</title>
+  </head>
+  <body>
+    <div class="MainContent">
+      <div class="Stairs"></div>
+      <div class="BackpackImg" onclick="openBackpack()"><img src="images/Backpack.png" alt="Backpack Content"></div>
+      <div class="BackpackPopup" id="BackpackPopup">
+       
+          <div class="Icons"><img src="images/Apple.png"><p>Fresh Apple</p></div> 
+            <div class="Icons"><img src="images/Bottle.png"><p>Water Bottle</p></div>
+              <div class="Icons"><img src="images/Letter.png"><p>Found Letter</p></div>
+               <div class="Icons"><img src="images/KitchenKnife.png"><p>Kitchen Knife</p></div>
+      <div class="BckgBackpack"><img src="images/Backpack.png"></div>
+        <div class="CloseBackpack" onclick="closeBackpack()">CLOSE THE BACKPACK</div>
+  
+    </div>
+      <div class="HomeButtonImg"><img src="images/HomeButton.png" alt="Home Button" onclick="openMenu()"></div></a>
+      <div class="PopUpMenu" id="PopUpMenu">
+        <p>Are you sure you want to exit the game?
+       </p>
+       <a href="index.html"><div class="HomeYes">YES</div></a>
+       <div class="HomeCancel" onclick="closeMenu()">CANCEL</div>
+      </div>
+      <div class="SurvivalScore">Survival Score: 0</div>
+      <a href="2Page.html"><div class="GoBackButton">GO BACK</div></a>
+
+      <div id="text-to-speak">
+      <div class="TextItalic"><p>Wait, is that blood on the 
+        wall? 
+        It cannot be…             
+        </p></div></div>
+        <div class="Speaker"><img src="images/Speaker.png" alt="Speaker"onclick="speakText()"></div>
+      <a href="4Page.html"><div class="RegularButton3">CONTINUE</div></a>
+      <div class="RegularButton" onclick="openInvestigate()">INVESTIGATE</div>
+      <div class="InvestigatePopup" id="InvestigatePopup">
+        <!--This pop-up works the same as other ones. However, it contains only
+        one image in the middle and two buttons.-->
+        <img src="images/Knife.png">  
+        <div id="text-to-speak">
+        <div class="Italic"><p>Oh no, oh no.. This is  definitely blood, looks  fresh as well. 
+           Like if someone just did a  horrible incident couple minutes ago. 
+          I can’t go back now, I have to find out who did this even if I would get hurt, 
+          even if it would cost my life.</p></div></div>
+          
+          <div class="InvestigateCancel" onclick="closeInvestigate()">CANCEL</div>
+          <div class="InvestigateTake" onclick="openBackpack()">TAKE THE KNIFE</div>
+          <!--Knife appears in the backpack when user taps "TAKE THE KNIFE" due to onclick event.
+          This fuction opens backpack pop-up automatically.-->
+  
+    </div>
+
+  </div>
+  
+  <script src="myScript.js"></script>
+
+  <audio loop autoplay>
+    <source src="music/3Page.mp3" type="audio/mp3">
+    Sorry if you cannot hear the music.
+    Your browser does not support the audio element.
+  </audio>
+
+  </body>
+
+</html>

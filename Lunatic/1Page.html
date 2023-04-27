@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Lunatic.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lunatic</title>
+  </head>
+  <body>
+    <div class="MainContent">
+        <div class="Asylum"></div>
+        <div class="BackpackImg" onclick="openBackpack()"><img src="images/Backpack.png" alt="Backpack Content"></div>
+        <div class="BackpackPopup" id="BackpackPopup">
+         
+            <div class="Icons"><img src="images/Apple.png"><p>Fresh Apple</p></div> 
+              <div class="Icons"><img src="images/Bottle.png"><p>Water Bottle</p></div>
+                <div class="Icons"><img src="images/Letter.png"><p>Found Letter</p></div>
+        <div class="BckgBackpack"><img src="images/Backpack.png"></div>
+          <div class="CloseBackpack" onclick="closeBackpack()">CLOSE THE BACKPACK</div>
+    <!--This section allows user to open backpack content when clicking the backpack icon in the
+    top right corner. It was achieved by uploading the "img" element and giving the image a specific
+    function "onclick". This "onclick" event evokes a function to open the id "BackpackPopup" or close
+    it later when tapping the button "CLOSE THE BACKPACK". With the CSS all images were styled as icons.-->
+      </div>
+        <div class="HomeButtonImg"><img src="images/HomeButton.png" alt="Home Button" onclick="openMenu()"></div>
+        <div class="PopUpMenu" id="PopUpMenu">
+          <p>Are you sure you want to exit the game?
+         </p>
+         <a href="index.html"><div class="HomeYes">YES</div></a>
+         <div class="HomeCancel" onclick="closeMenu()">CANCEL</div>
+        </div>
+    <!--This pop-up works on the same principle as the backpack. When user taps the "HomeButton",
+    this click evokes a function to open informational pop-up. User has to pick one of the options
+    to either go back to Home Page or to close the pop-up to continue playing the game.-->
+        <div id="text-to-speak">
+        <div class="Text"><p>Ryan woke up in the complete darkness..
+            Surrounded by the cold and the dense fog, discovering he is 
+            lying at the old cemetery. Between gravestones and chunks of grass, 
+            there was no sign of a life. He could not remember what he is doing here.. 
+            or how did he got here in the first place.
+            </p></div></div>
+        <div class="Speaker"><img src="images/Speaker.png" alt="Speaker"onclick="speakText()"></div>
+   <!--This text is with help of Javacript transformed into speech. ID "text-to-speak" is a label
+    for the text. Icon "Speaker" is uploaded as an image and when user clicks on it, labelled text is
+being spoken.-->   
+        <a href="2Page.html"><div class="RegularButton">GO INSIDE</div></a>
+
+    </div>
+    
+    <script src="myScript.js"></script>
+    <!--All pages except the Main Page contain a link to the javascript sheet, where all functions
+    can be found. This way code can be more organised as too much Javascript in HTML would
+  make it look chaotic.-->
+
+  <audio loop autoplay>
+    <source src="music/1Page.mp3" type="audio/mp3">
+    Sorry if you cannot hear the music.
+    Your browser does not support the audio element.
+  </audio>
+
+  </body>
+</html>

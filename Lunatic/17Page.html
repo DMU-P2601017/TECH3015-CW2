@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Lunatic.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lunatic</title>
+  </head>
+  <body>
+    <div class="MainContent">
+      <div class="Forest"></div>
+      <div class="HomeButtonImg"><img src="images/HomeButton.png" alt="Home Button" onclick="openMenu()"></div>
+      <div class="PopUpMenu" id="PopUpMenu">
+        <p>Are you sure you want to exit the game?
+       </p>
+       <a href="index.html"><div class="HomeYes">YES</div></a>
+       <div class="HomeCancel" onclick="closeMenu()">CANCEL</div>
+      </div>
+      <div class="SurvivalScore">Survival Score: 7150</div>
+      <a href="13Page.html"><div class="GoBackButton">GO BACK</div></a>
+    <div id="text-to-speak">   
+    <div class="Text3"><p> 
+        “999, what’s your emergency?”
+“Please, please help. I’m in front of a Charles Institute..”
+“How can we help you, sir? What’s your name?”
+“Ryan.. Ryan Walker.. Please hurry, I am in danger.. There is a murderer chasing me. He killed some people, he wants to kill me as well..”
+“What’s the address?”
+    </p></div>
+    <div class="TextItalic"><p> 
+        I heard some footsteps really close to me, felt the breath behind my neck. 
+    </p></div></div>
+    <div class="Speaker"><img src="images/Speaker.png" alt="Speaker"onclick="speakText()"></div>
+    <a href="18Page.html"><div class="RegularButton7">TURN AROUND</div></a>
+  </div>
+  <script src="myScript.js"></script>
+
+  <audio loop autoplay>
+    <source src="music/11Page.mp3" type="audio/mp3">
+    Sorry if you cannot hear the music.
+    Your browser does not support the audio element.
+  </audio>
+
+  </body>
+</html>
