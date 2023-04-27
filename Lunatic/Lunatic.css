@@ -3,15 +3,9 @@ otherwise. This means styling for body, p or headings stays the same throughout 
 not need to be repeated. */
 
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-@font-face {
-  font-family: 'Finger Paint', cursive; 
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital@1&display=swap');
-@font-face {
-  font-family: 'Fraunces', serif;
-}
+
 
 /*@import url and @font face were used to transfer and use the chosen font for text
 and headings. Google fonts were used to save storage for other content. Font-face 
@@ -265,7 +259,6 @@ h1 {
         top: 57%;
         left: 49%;
         transform: translate(-50%, -50%);
-        width: 1px 2px;
         background-color: #E2E4ED;
         padding: 2% 5%;
         border-radius: 25px;
@@ -418,7 +411,6 @@ different position on the webpage and to develop these pages accroding to the de
   position: absolute;
   top: 191%;
   left: 45.5%;
-  width: 1px 2px;
   transform: translate(-50%, -50%);
   background-color: #E2E4ED;
   padding: 2% 3%;
@@ -434,7 +426,6 @@ different position on the webpage and to develop these pages accroding to the de
   position: absolute;
   top: 195%;
   left: 10%;
-  width: 1px 2px;
   transform: translate(-50%, -50%);
   background-color: #E2E4ED;
   padding: 1% 2%;
@@ -449,7 +440,6 @@ different position on the webpage and to develop these pages accroding to the de
   position: absolute;
   top: 240%;
   left: 45.5%;
-  width: 1px 2px;
   transform: translate(-50%, -50%);
   background-color: #E2E4ED;
   padding: 2% 3%;
@@ -465,7 +455,6 @@ different position on the webpage and to develop these pages accroding to the de
   position: absolute;
   top: 241%;
   left: 10%;
-  width: 1px 2px;
   transform: translate(-50%, -50%);
   background-color: #E2E4ED;
   padding: 1% 2%;
@@ -518,7 +507,6 @@ different position for the button as necessary. */
   top: 87%;
   left: 7%;
   transform: translate(-50%, -50%);
-  width: 1px 2px;
   background-color: #E2E4ED;
   padding: 1% 3%;
   border-radius: 25px;
@@ -894,29 +882,36 @@ were designed to have same image size "width: 5em" and "float: left" to make ico
 appears nicely next to each other with spacing of "margin: 1%" */
 
 @media only screen and (max-width: 950px) {
+
+
 .ResultsButton {
   top: 170%;
   left: 45.5%;
+  font-size: 95%;
 }
 
 .GoBackButton2 {
   top: 171%;
   left: 10%;
+  font-size: 95%;
 }
 
 .ResultsButton2 {
   top: 195%;
   left: 45.5%;
+  font-size: 95%;
 }
 
 .GoBackButton3 {
   top: 196%;
   left: 10%;
+  font-size: 95%;
 }
 
 .GoBackButton {
   top: 87%;
   left: 12%;
+  font-size: 95%;
 
 }
 
@@ -935,33 +930,37 @@ appears nicely next to each other with spacing of "margin: 1%" */
   left: 30%;
 }
 
+.RegularButton, .RegularButton2, .RegularButton3, .RegularButton4, .RegularButton5, .RegularButton6, .RegularButton7, .RegularButton8 {
+ font-size: 95%;
+}
+
 .Text {
-  font-size: 100%;
+  font-size: 90%;
 }
 
 .TextItalic {
-  font-size: 100%;
+  font-size: 90%;
   left: 52%;
 }
 
 .Text1 {
   top: 80%;
-  font-size: 100%;
+  font-size: 90%;
 }
 
 .Text2 {
   top: 60%;
-  font-size: 100%;
+  font-size: 90%;
 }
 
 .TextItalic1 {
-  font-size: 100%;
+  font-size: 90%;
   top: 73.5%;
 }
 
 .Text3 {
   top: 69%;
-  font-size: 100%;
+  font-size: 90%;
 }
 
 .TextDecision {
@@ -1005,6 +1004,43 @@ appears nicely next to each other with spacing of "margin: 1%" */
   left: 89%;
 }
 
+.InvestigatePopup {
+  width: 50%;
+  height: 68%;
+}
+
+.InvestigateCancel {
+  top: 95.2%;
+  left: 78.8%;
+  padding: 4% 10.5%;
+  font-size: 80%;
+  
+}
+
+.InvestigateTake {
+  top: 95.2%;
+  left: 27.5%;
+  padding: 4% 4.5%;
+  font-size: 80%;
+
+}
+
+.InvestigateNext {
+  top: 95.2%;
+  left: 27.3%;
+  padding: 4% 10%;
+  font-size: 80%;
+}
+
+.InvestigatePopup img {
+  width: 50%;
+ }
+
+ .PopUpMenu {
+  width: 42%;
+  height: 15%;
+  font-size: 70%;
+}
 
 }
 
@@ -1032,6 +1068,16 @@ appears nicely next to each other with spacing of "margin: 1%" */
   .RegularButton5 {
     top: 79%;
     left: 79%;
+  }
+
+  .InvestigatePopup img {
+    width: 80%;
+   }
+
+   .PopUpMenu {
+    width: 70%;
+    height: 15%;
+    font-size: 65%;
   }
 
 }
